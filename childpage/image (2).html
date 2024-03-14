@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <!-- Used by the Keyboard-->
+    <meta charset="utf-8">
+
+    <title> Images </title>
+    <!-- Tab Favicon can be changed too, Google this-->
+    <!-- See https://www.w3schools.com/howto/howto_html_favicon.asp , accessed 20240214-->
+
+    <!-- Used by browser or Google Search-->
+    <meta name="author" content="Wazira Usmail">
+    <meta name="description" content="Learning HTML by building a simple Website">
+    <meta name="keywords" content="learning, html, boilerplate, starter">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <!-- Content give value for name or http-equiv attribute, text entry in string or array string -->
+    <!-- meta http-equiv="default-style" content=""--> <!-- content matches css link exactly-->
+    <!-- Other meta attributes to be aware of -->
+    <!-- meta http-equiv="refresh" content="30"-->
+    <!-- Content forces a Internet Request to refresh webpage every "time value in seconds" -->
+    <!-- Use this when refreshes are needed -->
+    <!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" -->
+    <!-- Already specified in the charset above-->
+    <!-- Cyber Security Note about JavaScript in Browsers-->
+
+    <!-- Websites Load in a specific order: Head, CSS, JavaScript, then the Body-->
+
+    <style>
+        * {
+            box-sizing: border-box;
+            //font-size: 2vw;
+        }
+        div { border: thin dotted red; }
+
+        .header {
+            border: 1px solid green;
+            padding: 15px;
+            //font-size: 4vw;
+        }
+
+        .nav {
+            width: 25%;
+            float: left;
+            padding: 15px;
+            border: 1px solid rgb(19, 0, 128);
+        }
+
+        .main {
+            width: 50%;
+            float: left;
+            padding: 15px;
+            border: 1px solid rgb(19, 0, 128);
+        }
+
+        .aside {
+            width: 25%;
+            float: left;
+            padding: 15px;
+            border: 1px solid rgb(19, 0, 128);
+        }
+
+        .footer {
+            padding: 15px;
+            border: 1px solid rgb(19, 0, 128);
+        }
+
+        .section {
+            width: 100%;
+            float: left;
+            padding: 15px;
+            border: 1px solid rgb(19, 0, 128);
+        }
+
+     </style>
+
+    <noscript>Running JavaScript is not necessary in the HTML page ... FYI: your Feature to execute scripts is turned off.</noscript>
+
+</head>
+
+<!-- Start here, BODY Semantic Tags-->
+<body>
+    <div>ViewPort Units are OFF</div>
+    <header class="header">
+        <h1 style="text-align: center;">Images Page</h1>
+        <h3 style="text-align: center;">Examples for drawing images on a webpage</h3>
+        <p>Be sure to open in a broswer and a WYSIWYG, like Microsoft Visual Code Studio.</p>
+        <p>Random fact about Red Powder: There is a movement called RED POWDER that began in 1969 over the occupation of Alcatraz Island in San Francisco Bay,</p>
+    </header>
+    <nav class="nav">
+        <h3 style="text-align: center;">Navigation</h3>
+        <!-- Hyperlinks do not have any formating, use unorganized or organized lists -->
+
+        <ul style="list-style-type:none;">
+            <!-- NONE removes symbol for list items-->
+            <li>Back to the Beginning: <a href="../index.html" target="_blank">Home Page</a></li>
+            <br>
+            <li>What each page should have: <a href="metaData.html" target="_blank">Meta Data, must view in WYSIWYG</a></li>
+            <br>
+            <li>What is possible with text: <a href="" target="_blank">Text Experimental Page</a></li>
+            <br>
+            <li>A more powerful way of using font size in viewport: <a href="" target="_blank">Viewport Units 1-6</a></li>
+            <br>
+            <li>What an image looks like: <a href="" target="_blank">Images Lesson</a></li>
+            <br>
+            <li>What each webpage will look like BLANK: <a href="" target="_blank">Child Template Page</a></li>
+            <br>
+        </ul>
+
+        <p>Use a text edittor to craft white text for the nav items.</p>
+        <p>Use "ol" with style="type=1|a|A|i|I;" if want numbered pages</p>
+        <p>Remember, the layout of li-tags & a-tags creates high contract with
+        hyperlinked colour text. 
+        Some viewers struggle with low contrast text and colours.
+        </p>
+        <p>CAUTION: Use the DOC-Map to craft all the pages, using file names in childTemplate before creating the actual files.
+        This will COPY/PASTE childTemplate to new pages with the same NAV Layout. 
+        </p>
+
+    </nav>
+    <main class="main">
+        <h1>Steps in Creating an Image</h1>
+        <p>
+            <ol style="type=I;">
+                <li>Pick an Image</li>
+                <li>Open image in new Browser Window until URL ends with image file extension (i.e. .jpg, .tiff, .mp3, .gif)</li>
+                <li>
+                    <!-- Note: use of white space below for only one line in rendered page -->
+                    Record URL,
+                    Cite,
+                    and comment for date accessed
+                </li>
+                <li>Record with blockquote-tag</li>
+                <li>Use img tag with src, alt, title, and style attribute</li>
+            </ol>
+        </p>
+        <section class="section">
+            <h2>Wazira's Red powder Image, 25% of width</h2>
+            <p>
+                <img src="https://t3.ftcdn.net/jpg/05/74/15/24/240_F_574152456_aWzY67dtkjEWVnNPNE7OHw9GNEINWw9d.jpg" alt="../Images/23089796-wow-in-pop-art.jpg" title="Red powder Wazira's" style="max-width:25%;height:auto;">
+                <!-- Will size to a max with of DISPLAY WINDOW, but not bigger -->
+                <!-- Play with percentages-->
+            </p>
+        </section>
+        <section class="section">
+            <h2>Wazira's Red powder Image, 100% of width</h2>
+            <p>
+                <img https://https://t3.ftcdn.net/jpg/05/74/15/24/240_F_574152456_aWzY67dtkjEWVnNPNE7OHw9GNEINWw9d.jpg" alt="../Images/23089796-wow-in-pop-art.jpg" title="Red powder Wazira" style="max-width:100%;height:auto;">
+                <!-- Will size to a max with of DISPLAY WINDOW, but not bigger -->
+                <!-- Play with percentages-->
+            </p>
+        </section>
+        <section class="section">
+            <h2>Wazira's,Red powder 25% of width</h2>
+            <p>
+                <img src=https://t3.ftcdn.net/jpg/05/74/15/24/240_F_574152456_aWzY67dtkjEWVnNPNE7OHw9GNEINWw9d.jpg" alt="../Images/viral-tiktok-hamster-meme-1024x576.avif" title="So CUTE!" style="max-width:25%;height:auto;">
+                <!-- Will size to a max with of DISPLAY WINDOW, but not bigger -->
+                <!-- Play with percentages-->
+            </p>
+        </section>
+        <section class="section">
+            <h2>Wazira's Red powder, 25% of width</h2>
+            <p>
+                <img src="https://t3.ftcdn.net/jpg/05/74/15/24/240_F_574152456_aWzY67dtkjEWVnNPNE7OHw9GNEINWw9d.jpg" alt="../Images/viral-tiktok-hamster-meme-1024x576.avif" title="So CUTE!" style="max-width:100%;height:auto;">
+                <!-- Will size to a max with of DISPLAY WINDOW, but not bigger -->
+                <!-- Play with percentages-->
+            </p>
+        </section>
+    </main>
+    <aside class="aside">
+        <h2>Information about these images</h2>
+        <!-- see the use of white space below to help human reading-->
+        <p>
+            <blockquote cite="https://t3.ftcdn.net/jpg/05/74/15/24/240_F_574152456_aWzY67dtkjEWVnNPNE7OHw9GNEINWw9d.jpg?width=1080&quality=75&format=auto">
+                <!-- Accessed 20240312 -->
+            </blockquote>
+            Image #2, Wazira's Red powder, with server help:
+            <a href="https://t3.ftcdn.net/jpg/05/74/15/24/240_F_574152456_aWzY67dtkjEWVnNPNE7OHw9GNEINWw9d.jpg?width=1080&quality=75&format=auto" target="_blank">
+                Find where this lives
+            </a>
+        </p>
+        <p>
+            <blockquote cite="https://t3.ftcdn.net/jpg/05/74/15/24/240_F_574152456_aWzY67dtkjEWVnNPNE7OHw9GNEINWw9d.jpg">
+                <!-- Accessed 20240312 -->
+            </blockquote>
+            Image #2, Wazira's redpowder, without server help: <a redpowder="https://t3.ftcdn.net/jpg/05/74/15/24/240_F_574152456_aWzY67dtkjEWVnNPNE7OHw9GNEINWw9d.jpg" target="_blank">Find where this lives</a>
+        </p>
+        <article>
+            <h2>How to read a URL, in an article tag. </h2>
+            <p><em>Note, there is no border here in the aside space.</em></p>
+            <p>
+                <ul>
+                    <!-- Note: bullet declaration not present here -->
+                    <li>Domain or Server Name</li>
+                    <li>Folders</li>
+                    <li>File Name</li>
+                    <li>File Extension</li>
+                    <li>Question to Server (i.e. ?)</li>
+                    <li>Parameters of server software to return image</li>
+                </ul>
+            </p>
+        </article>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br>
+    </aside>
+    <footer class="footer" style="text-align: center;">
+        <h1>Footer H-Tags,in h1</h1>
+        <p>Paragraph Tag</p>
+    </footer>
+</body>
+<footer style="text-align: center;">
+    <blockquote cite="">
+        <!-- Date Accessed 20240214-->
+    </blockquote>
+    <p>
+        <strong>"We know too well that our freedom is incomplete without Palestinians."</strong>
+        <em>-Nelson Mandela</em>
+    </p>
+    <p>&copy Wazira Usmial, powered by Wazira220 in GitHub</p>
+    <!-- Other information possible like Number of Visitors, Location, author contract information-->
+</footer>
+</html>
